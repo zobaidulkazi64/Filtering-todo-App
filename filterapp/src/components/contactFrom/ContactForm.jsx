@@ -34,29 +34,30 @@ const ContactForm = ({ getContact }) => {
 
     return(
 
-      <div>
-          <h1 style={{color: '#FF8000'}}>ContactFrom</h1>
-          <form onSubmit={hendleSubmit} >
+      <>
+          <h1>ContactFrom</h1>
+          <form className='fromc' onSubmit={hendleSubmit} >
+            <div className='input_from'>
             <div>
-                <label>Name:</label>
-                <input type='text' onChange={hendleChange} name='name' value={name} />
+                <input type='text' placeholder='Your Name' onChange={hendleChange} name='name' value={name} />
             </div>
             <br />
-            <div>
-                <label>Email:</label>
-                <input type='email' name='email' onChange={hendleChange} value={email} />
-
-            </div>
-            <div>
-                <label>Address:</label>
-                <input type='text' name='address' onChange={hendleChange} value={address} />
+            <div> 
+                <input type='email' placeholder='Your Email' name='email' onChange={hendleChange} value={email} />
 
             </div>
             <br />
             <div>
+               
+                <input type='text' placeholder='Your Address' name='address' onChange={hendleChange} value={address} />
+
+            </div>
+            <br />
+            <div className='label-data'>
                 <label>Filtering Data:</label>
                 <br />
                 <select 
+                    className='select-data'
                     name='group'
                     onChange={hendleChange}
                     value={group}
@@ -69,14 +70,15 @@ const ContactForm = ({ getContact }) => {
                     <option>Electronic Devices</option>
                 </select>
             </div>
+            </div>
             <br />
-            <br />
-
+            <div className='submit-btn'>
             <input type='submit' value='Creact New Value' />
+            </div>
 
           </form>
 
-      </div>
+      </>
 
         
     )

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import './Table.css'
 
 const Table = ({contacts}) => {
 
@@ -34,11 +34,13 @@ const Table = ({contacts}) => {
 
 
     return(
-        <div>
+        <>
 
-        <div>
-        <label>Filtering Data:</label><br />
-                <select value={filter} onChange={hendleChange}>
+        <div className='container'>
+        <div className='table-container'>
+        <h1>Filtering Data:</h1><br />
+
+                <select className='select-op' value={filter} onChange={hendleChange}>
 
                     <option value='All'>All</option>
                     <option value=''>None</option>
@@ -48,11 +50,13 @@ const Table = ({contacts}) => {
                     <option value='electronic'>Electronic Devices</option>
 
                 </select>
-        <input type='search' placeholder='Search' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />        
-
+        <div className='search-bar'>
+        <input type='search' placeholder='Search' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+        </div>        
 
         </div>
-            <table>
+        </div>
+            <table className='fl-table' cellpadding="0" cellspacing="0" border="0">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -74,7 +78,8 @@ const Table = ({contacts}) => {
 
                 </tbody>
             </table>
-        </div>
+        
+        </>
     )
 
 }

@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}   
+
+
+h1 {
+
+    color:  #FF8000;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 50px;
+}
+
+.fromc {
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+
+.input_from {
+    
+    margin: auto; text-align: center;
+ 
+
+}
+
+.input_from input {
+    padding: 10px;
+    border-radius: 3px 30px;
+    font-size: medium;
+
+}
+
+.label-data label {
+    font-size: 20px;
+    color: rebeccapurple;
+}
+
+.select-data {
+    padding: 10px;
+    border-radius: 3px 30px;
+    font-size: medium;
+    
+}
+
+.submit-btn input {
+    padding: 10px;
+    background-color: green;
+    border-radius: 20px;
+    border: navajowhite solid 1px;
+    text-align: center;
+    margin-left: 190px;
+    
+   
+}
+
+.submit-btn input:hover {
+    background-color: rgb(253, 0, 0);
+
+} 
+

@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import ContactForm from './components/contactFrom/ContactForm'
 import Table from './components/table/Table'
-
+import './App.css'
 
 
 
@@ -22,16 +22,16 @@ function App() {
 
 
   return (
-    <div>
+    <>
 
     <ContactForm getContact={getContact} />
 
-
+    <br />
     <hr />
 
     <Table  contacts={contacts}/>
         
-    </div>
+    </>
   )
 }
 
