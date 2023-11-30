@@ -38,7 +38,7 @@ const Table = ({contacts}) => {
 
         <div className='container '>
         <div className='table-container'>
-        <h1 className=''>Filtering Data:</h1><br />
+        <h1 className=''>Filtering Product:</h1><br />
 
                 <select className='select-op border-4 border-emerald-400' value={filter} onChange={hendleChange}>
 
