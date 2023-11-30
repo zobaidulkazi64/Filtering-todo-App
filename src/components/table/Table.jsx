@@ -36,11 +36,11 @@ const Table = ({contacts}) => {
     return(
         <>
 
-        <div className='container'>
+        <div className='container '>
         <div className='table-container'>
-        <h1>Filtering Data:</h1><br />
+        <h1 className=''>Filtering Data:</h1><br />
 
-                <select className='select-op' value={filter} onChange={hendleChange}>
+                <select className='select-op border-4 border-emerald-400' value={filter} onChange={hendleChange}>
 
                     <option value='All'>All</option>
                     <option value=''>None</option>
@@ -50,18 +50,18 @@ const Table = ({contacts}) => {
                     <option value='electronic'>Electronic Devices</option>
 
                 </select>
-        <div className='search-bar'>
-        <input type='search' placeholder='Search' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
-        </div>        
+                <div className=' w-1/4 m-4 p-2'>
+        <input className='border-4 border-emerald-400 p-3 rounded-3xl'  type='search' placeholder='Search' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+        </div>  
 
         </div>
         </div>
             <table className='fl-table' cellpadding="0" cellspacing="0" border="0">
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Address</th>
+                        <th>Product Name</th>
+                        <th>Regular Price</th>
+                        <th>Special Price</th>
                         <th>Categories</th>
                     </tr>
                 </thead>

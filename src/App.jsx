@@ -23,13 +23,15 @@ function App() {
 
   return (
     <>
+<div className='container'>
 
-    <ContactForm getContact={getContact} />
+<ContactForm getContact={getContact} />
 
-    <br />
-    <hr />
 
-    <Table  contacts={contacts}/>
+</div>
+<div className='container'>
+<Table  contacts={contacts}/>
+</div>
         
     </>
   )
